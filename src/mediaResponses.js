@@ -60,5 +60,11 @@ const getBling = (request, response) => {
   mediaGetter(request, response, file, 'audio/mpeg');
 };
 
+const getBird = (request, response) => {
+  const file = path.resolve(__dirname, '../client/bird.mp4');
+  mediaGetter(request, response, file, 'video/mp4');
+};
+
 module.exports.getParty = getParty;
 module.exports.getBling = getBling;
+module.exports.getBird = getBird;
